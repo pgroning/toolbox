@@ -33,7 +33,7 @@ listfuns()
 {
 cat << EOF
 EOF
-head -77 /home/prog/dvlp/scripts/calc/extensions.bc
+head -77 ./extensions.bc
 }
 
 if [ $# -le "0" ]; then
@@ -93,7 +93,7 @@ fi
 
 #result=`echo "scale=$prec+2;ibase=$ibase;obase=$obase; $expr" | bc -l /home/prog/dvlp/scripts/calc/extensions.bc`
 
-result=`echo "scale=17; $expr" | bc -l /home/prog/dvlp/scripts/calc/extensions.bc`
+result=`echo "scale=17; $expr" | bc -l ./extensions.bc`
 
 #echo $result
 
