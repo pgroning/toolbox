@@ -9,10 +9,11 @@ use POSIX;
 my ($url, $ifolder, $ifile, $ofolder, $ofile, $eofile);
 my (@ofile_array, @eofile_array);
 
-#$ifolder = "/home/per/Videos/AVCHD/BDMV/STREAM";
-$ifolder = "/media/per/CAM_SD/PRIVATE/AVCHD/BDMV/STREAM";
-$ofolder = "/home/per/Videos/camcorder";
-
+#$ifolder = "$ENV{'HOME'}/Videos/AVCHD/BDMV/STREAM";
+$ifolder = "/media/$ENV{'USER'}/CAM_SD/PRIVATE/AVCHD/BDMV/STREAM";
+$ofolder = "$ENV{'HOME'}/Videos/camcorder";
+print $ifolder;
+__END__
 #Create output folders
 mkdir($ofolder) unless(-d $ofolder);
 my $eofolder = $ofolder . "/" . "encode";
