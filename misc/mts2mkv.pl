@@ -12,7 +12,6 @@ my (@ofile_array, @eofile_array);
 #$ifolder = "$ENV{'HOME'}/Videos/AVCHD/BDMV/STREAM";
 $ifolder = "/media/$ENV{'USER'}/CAM_SD/PRIVATE/AVCHD/BDMV/STREAM";
 $ofolder = "$ENV{'HOME'}/Videos/camcorder";
-print $ifolder;
 
 #Create output folders
 mkdir($ofolder) unless(-d $ofolder);
