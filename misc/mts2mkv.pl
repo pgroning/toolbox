@@ -13,7 +13,7 @@ my (@ofile_array, @eofile_array);
 $ifolder = "/media/$ENV{'USER'}/CAM_SD/PRIVATE/AVCHD/BDMV/STREAM";
 $ofolder = "$ENV{'HOME'}/Videos/camcorder";
 print $ifolder;
-__END__
+
 #Create output folders
 mkdir($ofolder) unless(-d $ofolder);
 my $eofolder = $ofolder . "/" . "encode";
